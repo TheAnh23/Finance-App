@@ -2,19 +2,13 @@ import re
 import streamlit as st
 import pandas as pd
 import numpy as np
-import seaborn as sns
 import matplotlib.pyplot as plt
 import plotly.graph_objects as go
 import plotly.express as px
-import tensorflow as tf
-from pmdarima import auto_arima
 from sklearn.preprocessing import LabelEncoder
-from statsmodels.tsa.api import VAR
-from statsmodels.tsa.stattools import adfuller
 from tensorflow.keras.models import Sequential
-from tensorflow.keras.layers import LSTM, Dense, Dropout
+from tensorflow.keras.layers import LSTM, Dense
 from sklearn.preprocessing import MinMaxScaler
-from sklearn.model_selection import train_test_split
 from sklearn.metrics import mean_squared_error, mean_absolute_error
 
 le = LabelEncoder()
